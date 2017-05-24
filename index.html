@@ -1,0 +1,188 @@
+<html>
+<head>
+  <script src="jquery-1.10.2.js" type="text/javascript"></script>
+  <title>Strong and Stable Alternatives</title>
+</head>
+<body>
+
+  <style>
+  span.headline {
+    margin: 180px 0 0;
+    padding: 0;
+    height: 28px;
+    overflow: hidden;
+    font: normal 18px/18px SansThirteenBlack, Impact, Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+
+span.headline2 {
+  margin: 180px 0 0;
+  padding: 0;
+  height: 28px;
+  overflow: hidden;
+  font: normal 38px/38px SansThirteenBlack, Impact, Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+  span#alternative {
+    margin: 80px 10px 10px 10px;
+    height: 258px;
+    overflow: hidden;
+    font: normal 188px/188px SansThirteenBlack, Impact, Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+</style>
+
+<div>
+  <span class="headline">The Conservatives are <a href="https://twitter.com/thom_brooks/status/866675568284229634">preparing</a> "alternative" versions of their manifesto. A simple thesaurus can help.</span>
+</div>
+<div>
+  <span class="headline2">If not STRONG and STABLE, it could be...</span>
+</div>
+<div>
+  <span id="alternative"></span>
+</div>
+</div>
+  <button id="generate">I don't like it, generate a different one.</button>
+
+  <script>
+  strong = [
+  'healthy',
+  'powerful',
+  'able',
+  'active',
+  'athletic',
+  'big',
+  'capable',
+  'durable',
+  'energetic',
+  'firm',
+  'forceful',
+  'heavy',
+  'robust',
+  'secure',
+  'solid',
+  'stable',
+  'steady',
+  'substantial',
+  'tenacious',
+  'tough',
+  'vigorous',
+  'able-bodied',
+  'enduring',
+  'fixed',
+  'forcible',
+  'hale',
+  'hard as nails',
+  'hardy',
+  'hearty',
+  'heavy-duty',
+  'in fine feather',
+  'mighty',
+  'muscular',
+  'reinforced',
+  'rugged',
+  'sinewy',
+  'sound',
+  'stalwart',
+  'staunch',
+  'stout',
+  'strapping',
+  'sturdy',
+  'unyielding',
+  'well-built',
+  'well-founded',
+  'well-made',];
+
+  stable = ['constant',
+  'fixed',
+  'resistant',
+  'balanced',
+  'calm',
+  'durable',
+  'fast',
+  'lasting',
+  'permanent',
+  'reliable',
+  'safe',
+  'secure',
+  'solid',
+  'steady',
+  'strong',
+  'substantial',
+  'abiding',
+  'anchored',
+  'enduring',
+  'established',
+  'even',
+  'firm',
+  'invariable',
+  'nailed',
+  'poised',
+  'set',
+  'sound',
+  'stabile',
+  'stalwart',
+  'staunch',
+  'stout',
+  'tough',
+  'uniform',
+  'brick-wall',
+  'deep-rooted',
+  'equable',
+  'immutable',
+  'perdurable',
+  'resolute',
+  'set in stone',
+  'solid as a rock',
+  'stationary',
+  'staying put',
+  'steadfast',
+  'sturdy',
+  'sure',
+  'together',
+  'unalterable',
+  'unchangeable',
+  'unfluctuating',
+  'unvarying',
+  'unwavering',
+  'well-built',
+  'well-founded',
+  ];
+
+    $('#generate').click(function() {
+      var strong_item = strong[Math.floor(Math.random()*strong.length)];
+      var stable_item = stable[Math.floor(Math.random()*stable.length)];
+      $('#alternative').text(strong_item + " and " + stable_item);
+    });
+
+    $('#generate').trigger( "click" );
+  </script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99677420-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
