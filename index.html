@@ -170,11 +170,11 @@
         ];
 
         var generateBtn = document.getElementById('generate');
-        var alternativeBtn = document.getElementById('alternative');
+        var alternative = document.getElementById('alternative');
         var update = function() {
             var strong_item = strong[Math.floor(Math.random() * strong.length)];
             var stable_item = stable[Math.floor(Math.random() * stable.length)];
-            alternativeBtn.innerText = strong_item + " and " + stable_item;
+            alternative.innerText = strong_item + " and " + stable_item;
         };
         generateBtn.addEventListener('click', update);
         generateBtn.addEventListener('touchstart', update);
